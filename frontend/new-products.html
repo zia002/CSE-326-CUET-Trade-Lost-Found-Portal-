@@ -43,22 +43,24 @@
         <a href="lost-found.html">Lost & Found</a>
         <a href="sell.html" class="icon-link">
           <!-- SVG preserved -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-            stroke="currentColor" height="24px" viewBox="0 -960 960 960" width="24px">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            height="24px" viewBox="0 -960 960 960" width="24px">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
           </svg>
           Become a Seller
         </a>
         <a href="cart.html" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="currentColor">
             <path
               d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
           </svg>
           Cart
         </a>
         <a href="login.html" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+            fill="currentColor">
             <path
               d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
           </svg>
@@ -127,46 +129,100 @@
         <h3 class="text-2xl font-bold mb-6">👕 Fashion</h3>
         <div id="fashion-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <!-- Product Cards -->
-          <a href="fashion.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+          <a href="fashion.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/fashion_image.jpg" alt="Classic Cotton T-Shirt - Black"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Classic Cotton T-Shirt (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Soft, breathable 100% cotton with a modern slim fit</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="fashion.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+
+
+          <a href="fashion.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/fashion_image.jpg" alt="Classic Cotton T-Shirt - Black"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Classic Cotton T-Shirt (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Soft, breathable 100% cotton with a modern slim fit</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="fashion.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+
+
+          <a href="fashion.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/fashion_image.jpg" alt="Classic Cotton T-Shirt - Black"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Classic Cotton T-Shirt (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Soft, breathable 100% cotton with a modern slim fit</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="fashion.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+
+
+
+          <a href="fashion.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/fashion_image.jpg" alt="Classic Cotton T-Shirt - Black"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Classic Cotton T-Shirt (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Soft, breathable 100% cotton with a modern slim fit</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
+
+
+
         </div>
         <div class="text-center mt-6">
           <button id="loadFashion"
@@ -179,45 +235,90 @@
       <div>
         <h3 class="text-2xl font-bold mb-6">📱 Electronics & Accessories</h3>
         <div id="electronics-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <a href="electronics.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+
+          <a href="electronics.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/elec_image.jpg" alt="20000mAh Fast Charging Power Bank"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">20000mAh PD Power Bank (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Dual USB-C fast charging | 18W output | LED power indicator</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="electronics.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+          <a href="electronics.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/elec_image.jpg" alt="20000mAh Fast Charging Power Bank"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">20000mAh PD Power Bank (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Dual USB-C fast charging | 18W output | LED power indicator</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="electronics.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+          <a href="electronics.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/elec_image.jpg" alt="20000mAh Fast Charging Power Bank"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">20000mAh PD Power Bank (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Dual USB-C fast charging | 18W output | LED power indicator</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
-          <a href="electronics.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 500</strong>
+          <a href="electronics.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/elec_image.jpg" alt="20000mAh Fast Charging Power Bank"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                New
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">20000mAh PD Power Bank (Black)</h3>
+              <p class="text-sm text-gray-500 mb-3">Dual USB-C fast charging | 18W output | LED power indicator</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 500</span>
+              </div>
+            </div>
           </a>
 
 
@@ -234,36 +335,91 @@
         <h3 class="text-2xl font-bold mb-6">💻 Digital Subscriptions</h3>
         <div id="digital-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-          <a href="digital-sub.html" 
-          class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <img src="assets/logo.png" alt="YouTube" 
-            class="w-full h-auto object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">YouTube Plus</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 800/month</strong>
-          </a>  
-          <a href="digital-sub.html" 
-          class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <img src="assets/logo.png" alt="YouTube" 
-            class="w-full h-auto object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">YouTube Plus</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 800/month</strong>
-          </a>  
-          <a href="digital-sub.html" 
-          class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <img src="assets/logo.png" alt="YouTube" 
-            class="w-full h-auto object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">YouTube Plus</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 800/month</strong>
-          </a>  
-          <a href="digital-sub.html" 
-          class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <img src="assets/logo.png" alt="YouTube" 
-            class="w-full h-auto object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">YouTube Plus</p>
-            <strong class="font-extrabold text-2xl text-green-600">৳ 800/month</strong>
+
+          <a href="digital-sub.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/dig_image.jpg" alt="Netflix Premium Subscription"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Popular
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Netflix Premium Plan</h3>
+              <p class="text-sm text-gray-500 mb-3">4K Ultra HD | 4 Screens | Unlimited Movies & Shows</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 800/month</span>
+              </div>
+            </div>
           </a>
-
-
+          <a href="digital-sub.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/dig_image.jpg" alt="Netflix Premium Subscription"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Popular
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Netflix Premium Plan</h3>
+              <p class="text-sm text-gray-500 mb-3">4K Ultra HD | 4 Screens | Unlimited Movies & Shows</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 800/month</span>
+              </div>
+            </div>
+          </a>
+          <a href="digital-sub.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/dig_image.jpg" alt="Netflix Premium Subscription"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Popular
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Netflix Premium Plan</h3>
+              <p class="text-sm text-gray-500 mb-3">4K Ultra HD | 4 Screens | Unlimited Movies & Shows</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 800/month</span>
+              </div>
+            </div>
+          </a>
+          <a href="digital-sub.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/dig_image.jpg" alt="Netflix Premium Subscription"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Popular
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Netflix Premium Plan</h3>
+              <p class="text-sm text-gray-500 mb-3">4K Ultra HD | 4 Screens | Unlimited Movies & Shows</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 800/month</span>
+              </div>
+            </div>
+          </a>
 
         </div>
         <div class="text-center mt-6">
@@ -279,45 +435,89 @@
       <div>
         <h3 class="text-2xl font-bold mb-6">🛍️ Others</h3>
         <div id="digital-products" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          <a href="other-product.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <p class="font-extrabold text-2xl text-green-600">৳ 500</p>
+          <a href="other-product.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/doi_chira.jpg" alt="Homemade Doi Chira - Traditional Bangladeshi Breakfast"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Homemade
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Traditional Doi Chira</h3>
+              <p class="text-sm text-gray-500 mb-3">Fresh flattened rice with yogurt, banana & seasonal fruits</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 50</span>
+              </div>
+            </div>
           </a>
-          <a href="other-product.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <p class="font-extrabold text-2xl text-green-600">৳ 500</p>
+          <a href="other-product.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/doi_chira.jpg" alt="Homemade Doi Chira - Traditional Bangladeshi Breakfast"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Homemade
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Traditional Doi Chira</h3>
+              <p class="text-sm text-gray-500 mb-3">Fresh flattened rice with yogurt, banana & seasonal fruits</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 50</span>
+              </div>
+            </div>
           </a>
-          <a href="other-product.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <p class="font-extrabold text-2xl text-green-600">৳ 500</p>
+          <a href="other-product.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/doi_chira.jpg" alt="Homemade Doi Chira - Traditional Bangladeshi Breakfast"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Homemade
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Traditional Doi Chira</h3>
+              <p class="text-sm text-gray-500 mb-3">Fresh flattened rice with yogurt, banana & seasonal fruits</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 50</span>
+              </div>
+            </div>
           </a>
-          <a href="other-product.html"
-            class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 relative">
-            <div
-              class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
-              New</div>
-            <img src="assets/logo.png" alt="SL-BK-3 Slide Camera Strap Black"
-              class="w-full h-48 object-cover rounded mb-3 transform hover:scale-105 transition">
-            <p class="font-sans text-gray-800">SL-BK-3 Slide, Camera Strap, Black</p>
-            <p class="font-extrabold text-2xl text-green-600">৳ 500</p>
+          <a href="other-product.html" class="block bg-white rounded-xl overflow-hidden transition-all duration-300 group relative 
+          shadow-[0_2px_4px_rgba(0,0,0,0.05),0_4px_8px_rgba(0,0,0,0.1)] 
+          hover:shadow-[0_4px_8px_rgba(0,0,0,0.1),0_6px_12px_rgba(0,0,0,0.15)]
+          border border-gray-100 hover:border-gray-200
+          transform hover:-translate-y-0.5">
+            <div class="relative">
+              <img src="assets/doi_chira.jpg" alt="Homemade Doi Chira - Traditional Bangladeshi Breakfast"
+                class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              <div
+                class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                Homemade
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900 mb-1">Traditional Doi Chira</h3>
+              <p class="text-sm text-gray-500 mb-3">Fresh flattened rice with yogurt, banana & seasonal fruits</p>
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-green-600 text-lg">৳ 50</span>
+              </div>
+            </div>
           </a>
 
 
@@ -334,7 +534,7 @@
   </section>
 
   <!-- Footer -->
-<footer class="footer">
+  <footer class="footer">
     © 2025 CUET Trade & Lost-Found Portal. All rights reserved.
   </footer>
 

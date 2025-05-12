@@ -831,3 +831,221 @@ body {
   font-size: 0.9rem;
   color: #6b7280;
 }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #1e40af;
+    line-height: 1.2;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1e40af;
+    transform: scale(1.1);
+}
+
+.icon-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.signup-btn {
+    background-color: #f97316;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+    color: white;
+    text-decoration: none;
+}
+
+.signup-btn:hover {
+    background-color: #ea580c;
+}
+
+/* Sell Section Styles */
+.sell-section {
+    padding: 80px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sell-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.sell-subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-bottom: 40px;
+}
+
+.sell-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sell-card {
+    background-color: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sell-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: #1e40af;
+}
+
+.sell-icon {
+    width: 64px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease;
+}
+
+.sell-card:hover .sell-icon {
+    transform: scale(1.1);
+}
+
+.sell-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.sell-desc {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f3f4f6;
+    border-top: 1px solid #e5e7eb;
+    padding: 32px 16px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sell-options {
+        gap: 20px;
+    }
+    
+    .sell-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .sell-title {
+        font-size: 2rem;
+    }
+    
+    .sell-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 12px 16px;
+    }
+    
+    .sell-section {
+        padding: 60px 16px;
+    }
+    
+    .sell-title {
+        font-size: 1.75rem;
+    }
+    
+    .sell-subtitle {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Electronics Product | CUET Portal</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#f97316',
+            accent: '#22c55e'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3 hover:scale-105 transition">
+        <img src="assets/logo.png" alt="CUET Logo" class="w-10 h-10 object-contain" />
+        <span class="text-lg lg:text-xl font-extrabold text-primary leading-tight">
+          CUET Trade &<br class="hidden lg:inline" /> Lost-Found Portal
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-10 text-sm font-semibold text-black">
+        <a href="new-products.html" class="hover:scale-125 hover:text-primary transition">New Arrivals</a>
+        <a href="bidding.html" class="hover:scale-125 hover:text-primary transition">Pre-Owned Products</a>
+        <a href="lost-found.html" class="hover:scale-125 hover:text-primary transition">Lost & Found</a>
+        <a href="sell.html" class="hover:scale-125 hover:text-primary transition">Become a Seller</a>
+        <a href="cart.html" class="hover:scale-125 hover:text-primary transition">Cart</a>
+        <a href="login.html" class="hover:scale-125 hover:text-primary transition">Login</a>
+        <a href="signup.html" class="bg-secondary text-white px-4 py-1.5 rounded-full shadow hover:bg-orange-600 transition">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Upload Form Section -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-extrabold text-center text-primary mb-10">Upload Electronics Product</h1>
+
+    <form class="bg-white p-8 rounded-xl shadow space-y-6">
+      <div>
+        <label class="block mb-2 font-semibold">Product Name</label>
+        <input type="text" placeholder="e.g., Samsung 45W GaN Charger" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold">Price (৳)</label>
+        <input type="number" placeholder="e.g., 2999" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary">
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold">Product Highlights</label>
+        <textarea placeholder="Write important features separated by commas." rows="4" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary"></textarea>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold">Specifications</label>
+        <textarea placeholder="Mention detailed specifications." rows="4" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary"></textarea>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold">Product Description</label>
+        <textarea placeholder="Write a detailed description of the product." rows="4" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary"></textarea>
+      </div>
+
+      <div>
+        <label class="block mb-2 font-semibold">Upload Product Image</label>
+        <input type="file" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-primary">
+      </div>
+
+      <div class="flex justify-center">
+        <button type="submit" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:scale-105 transition">Submit Product</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+    © 2025 CUET Trade & Lost-Found Portal. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
