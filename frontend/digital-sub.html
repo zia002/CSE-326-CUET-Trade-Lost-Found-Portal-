@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CUET Trade & Lost-Found Portal</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#f97316',
+            accent: '#22c55e'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="CUET Logo" class="logo-img" />
+        <span class="logo-text">CUET Trade &<br class="hide-mobile" /> Lost-Found Portal</span>
+      </a>
+      <nav class="nav-links">
+        <a href="new-products.html">New Arrivals</a>
+        <a href="bidding.html">Pre-Owned Products</a>
+        <a href="lost-found.html">Lost & Found</a>
+        <a href="sell.html" class="icon-link">
+          <!-- SVG preserved -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+          </svg>
+          Become a Seller
+        </a>
+        <a href="cart.html" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path
+              d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+          </svg>
+          Cart
+        </a>
+        <a href="login.html" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path
+              d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+          </svg>
+          Login
+        </a>
+        <a href="signup.html" class="signup-btn" style="color: white;">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Product Overview -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- Images -->
+    <div class="w-full flex items-center justify-center bg-white rounded-xl shadow mb-4 overflow-hidden">
+        <img src="assets/logo.png" alt="YouTube Premium" class="max-h-full max-w-full object-contain p-6">
+      </div>
+            
+
+    <!-- Product Info -->
+    <div>
+      <h1 class="text-4xl font-extrabold mb-4 text-primary">YouTube Premium Subscription</h1>
+      <p class="text-2xl font-bold text-green-600 mb-2">৳ 800/month</p>
+      <p class="text-gray-600 mb-6">Enjoy ad-free videos, background play, and YouTube Music.</p>
+
+      <div class="space-y-2 mb-6">
+        <p>✅ Ad-free Videos</p>
+        <p>✅ Background Play</p>
+        <p>✅ Offline Downloads</p>
+        <p>✅ YouTube Music Premium Access</p>
+        <p>✅ Family Plan Available</p>
+      </div>
+
+      <!-- Seller Info -->
+      <div class="bg-white p-5 rounded-xl shadow mb-6">
+        <h3 class="text-lg font-bold mb-2 text-primary">Seller Information</h3>
+        <p class="text-gray-700"><span class="font-semibold">Seller:</span> BUZZINDIA </p>
+        <p class="text-gray-700"><span class="font-semibold">Phone:</span> +880 1234-567890</p>
+        <p class="text-gray-700"><span class="font-semibold">Whats App:</span> +880 1234-567890</p>
+        <p class="text-gray-700"><span class="font-semibold">Email:</span>
+        <a href="mailto: <span class=" text-blue-500"> u2104000@student.cuet.ac.bd </span> </a>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button class="bg-primary text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">Add to Cart</button>
+        <button class="bg-secondary text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">Subscribe Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="max-w-7xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-6 text-center">Product Description</h2>
+    <p class="bg-white p-6 rounded-xl shadow text-gray-700">
+      YouTube Premium offers an uninterrupted viewing experience with no ads, offline video downloads, background play while multitasking, and access to YouTube Music Premium for ad-free music streaming. Enjoy your favorite creators without any interruptions and support them directly through your subscription. Great for students, professionals, and entertainment lovers alike!
+    </p>
+  </section>
+
+  <!-- Related Products -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center">🔗 Related Subscriptions</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <a href="#" class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="assets/logo.png" alt="Netflix" class="w-24 h-16 mx-auto mb-3 object-contain">
+        <p class="font-semibold">Netflix Premium</p>
+        <p class="text-green-600 font-bold">৳ 500/month</p>
+      </a>
+      <a href="#" class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="assets/logo.png" alt="Coursera" class="w-24 h-16 mx-auto mb-3 object-contain">
+        <p class="font-semibold">Coursera Plus</p>
+        <p class="text-green-600 font-bold">৳ 1500/year</p>
+      </a>
+      <a href="#" class="bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center">
+        <img src="assets/logo.png" alt="ChatGPT Premium" class="w-24 h-16 mx-auto mb-3 object-contain">
+        <p class="font-semibold">ChatGPT Premium</p>
+        <p class="text-green-600 font-bold">৳ 2000/month</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+    © 2025 CUET Trade & Lost-Found Portal. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
