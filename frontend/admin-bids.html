@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Manage Bids</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#f97316',
+            accent: '#22c55e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- Admin Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="admin-dashboard.html" class="text-2xl font-extrabold text-primary tracking-tight">Admin Panel</a>
+      <nav class="flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="admin-dashboard.html" class="hover:text-primary">Dashboard</a>
+        <a href="admin-users.html" class="hover:text-primary">Users</a>
+        <a href="admin-products.html" class="hover:text-primary">Products</a>
+        <a href="admin-bids.html" class="text-primary font-semibold">Bids</a>
+        <a href="admin-lost-found.html" class="hover:text-primary">Lost & Found</a>
+        <a href="login.html" class="text-red-500 hover:underline">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bids Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-extrabold mb-8">🔨 Manage Bidding Items</h1>
+
+    <!-- Search -->
+    <div class="mb-6 flex justify-between items-center">
+      <input type="text" placeholder="Search items or sellers..." class="w-full max-w-sm px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <button class="ml-4 px-6 py-2 bg-primary text-white rounded-full hover:bg-blue-800 transition shadow">Search</button>
+    </div>
+
+    <!-- Bidding Items Table -->
+    <div class="overflow-x-auto bg-white rounded-xl shadow">
+      <table class="min-w-full text-sm text-left">
+        <thead class="bg-gray-100 text-gray-700 uppercase text-xs">
+          <tr>
+            <th class="px-6 py-4">#</th>
+            <th class="px-6 py-4">Item</th>
+            <th class="px-6 py-4">Seller</th>
+            <th class="px-6 py-4">Current Bid</th>
+            <th class="px-6 py-4">Ends In</th>
+            <th class="px-6 py-4 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-medium">1</td>
+            <td class="px-6 py-4">Used Laptop</td>
+            <td class="px-6 py-4">John Doe</td>
+            <td class="px-6 py-4">৳320</td>
+            <td class="px-6 py-4">1h 12m</td>
+            <td class="px-6 py-4 text-center space-x-2">
+              <button class="text-sm text-blue-600 hover:underline">View Bids</button>
+              <button class="text-sm text-yellow-600 hover:underline">End Early</button>
+              <button class="text-sm text-red-600 hover:underline">Remove</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-medium">2</td>
+            <td class="px-6 py-4">Drawing Tablet</td>
+            <td class="px-6 py-4">Nusrat Jahan</td>
+            <td class="px-6 py-4">৳150</td>
+            <td class="px-6 py-4">3h 45m</td>
+            <td class="px-6 py-4 text-center space-x-2">
+              <button class="text-sm text-blue-600 hover:underline">View Bids</button>
+              <button class="text-sm text-yellow-600 hover:underline">End Early</button>
+              <button class="text-sm text-red-600 hover:underline">Remove</button>
+            </td>
+          </tr>
+          <!-- More items can be added here -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8 text-center text-sm text-gray-500">
+    © 2025 CampusCart Admin. All rights reserved.
+  </footer>
+
+</body>
+</html>

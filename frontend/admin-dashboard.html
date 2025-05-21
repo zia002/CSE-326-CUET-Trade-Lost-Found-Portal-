@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CUET Trade & Lost-Found Portal Admin - Dashboard</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar style="display: flex; justify-content: center; gap: 24px;">
+    <div class="navbar-container">
+      <a href="admin-dashboard.html" class="logo-link">
+        <img src="assets/logo.png" alt="CampusCart Admin" class="logo-img" />
+        <span class="logo-text">CUET Trade & <br>
+           Lost-Found Portal<br class="hide-mobile" />
+           Admin Panel</span>
+      </a>
+      <nav class="nav-links" >
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="admin-users.html">Users</a>
+        <a href="admin-products.html">Products</a>
+        <a href="admin-bids.html">Bids</a>
+        <a href="admin-lost-found.html">Lost & Found</a>        
+        <a href="login.html" class="icon-link">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path
+              d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+          </svg>
+          My Profile
+        </a>
+        <a href="admin.html" class="logout-btn" style="color: white;">Sign Out</a>
+
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Admin Dashboard Content -->
+  <main class="admin-main">
+    <h1 class="admin-title">👋 Welcome, Admin</h1>
+    <p class="admin-subtitle">Here’s your quick dashboard overview</p>
+
+    <div class="dashboard-cards">
+      <div class="dashboard-card">
+        <p class="card-label">Total Users</p>
+        <h2 class="card-value">1,245</h2>
+      </div>
+      <div class="dashboard-card">
+        <p class="card-label">Products Listed</p>
+        <h2 class="card-value">582</h2>
+      </div>
+      <div class="dashboard-card">
+        <p class="card-label">Active Bids</p>
+        <h2 class="card-value">78</h2>
+      </div>
+      <div class="dashboard-card">
+        <p class="card-label">Lost/Found Posts</p>
+        <h2 class="card-value">34</h2>
+      </div>
+    </div>
+
+    <h2 class="admin-subtitle" style="margin-top: 40px;">Quick Actions</h2>
+
+    <div class="quick-actions">
+      <a href="admin-users.html" class="quick-btn orange">Manage Users</a>
+      <a href="admin-products.html" class="quick-btn blue">Manage Products</a>
+      <a href="admin-bids.html" class="quick-btn green">View Bids</a>
+      <a href="admin-lost-found.html" class="quick-btn yellow">Moderate Lost & Found</a>
+      <a href="sell-old.html" class="quick-btn dark">Create Bidding Product</a>
+      <a href="sell-new.html" class="quick-btn gray">Create Fixed Product</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 CUET Trade & Lost-Found Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>

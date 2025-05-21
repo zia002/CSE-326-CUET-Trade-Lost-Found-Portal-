@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Manage Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            secondary: '#f97316',
+            accent: '#22c55e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- Admin Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="admin-dashboard.html" class="text-2xl font-extrabold text-primary tracking-tight">Admin Panel</a>
+      <nav class="flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="admin-dashboard.html" class="hover:text-primary">Dashboard</a>
+        <a href="admin-users.html" class="hover:text-primary">Users</a>
+        <a href="admin-products.html" class="text-primary font-semibold">Products</a>
+        <a href="admin-bids.html" class="hover:text-primary">Bids</a>
+        <a href="admin-lost-found.html" class="hover:text-primary">Lost & Found</a>
+        <a href="login.html" class="text-red-500 hover:underline">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Products Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-extrabold mb-8">📦 Manage Products</h1>
+
+    <!-- Search -->
+    <div class="mb-6 flex justify-between items-center">
+      <input type="text" placeholder="Search products..." class="w-full max-w-sm px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+      <button class="ml-4 px-6 py-2 bg-primary text-white rounded-full hover:bg-blue-800 transition shadow">Search</button>
+    </div>
+
+    <!-- Product Table -->
+    <div class="overflow-x-auto bg-white rounded-xl shadow">
+      <table class="min-w-full text-sm text-left">
+        <thead class="bg-gray-100 text-gray-700 uppercase text-xs">
+          <tr>
+            <th class="px-6 py-4">#</th>
+            <th class="px-6 py-4">Product</th>
+            <th class="px-6 py-4">Category</th>
+            <th class="px-6 py-4">Price</th>
+            <th class="px-6 py-4">Status</th>
+            <th class="px-6 py-4 text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200">
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-medium">1</td>
+            <td class="px-6 py-4">Wireless Earbuds</td>
+            <td class="px-6 py-4">Electronics</td>
+            <td class="px-6 py-4">৳120</td>
+            <td class="px-6 py-4">
+              <span class="px-3 py-1 text-xs rounded-full bg-green-100 text-green-700">Active</span>
+            </td>
+            <td class="px-6 py-4 text-center space-x-2">
+              <button class="text-sm text-blue-600 hover:underline">Edit</button>
+              <button class="text-sm text-yellow-600 hover:underline">Deactivate</button>
+              <button class="text-sm text-red-600 hover:underline">Delete</button>
+            </td>
+          </tr>
+          <tr class="hover:bg-gray-50">
+            <td class="px-6 py-4 font-medium">2</td>
+            <td class="px-6 py-4">Graphic T-Shirt</td>
+            <td class="px-6 py-4">Fashion</td>
+            <td class="px-6 py-4">৳260</td>
+            <td class="px-6 py-4">
+              <span class="px-3 py-1 text-xs rounded-full bg-yellow-100 text-yellow-700">Inactive</span>
+            </td>
+            <td class="px-6 py-4 text-center space-x-2">
+              <button class="text-sm text-blue-600 hover:underline">Edit</button>
+              <button class="text-sm text-green-600 hover:underline">Activate</button>
+              <button class="text-sm text-red-600 hover:underline">Delete</button>
+            </td>
+          </tr>
+          <!-- Add more products dynamically -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8 text-center text-sm text-gray-500">
+    © 2025 CampusCart Admin. All rights reserved.
+  </footer>
+
+</body>
+</html>
