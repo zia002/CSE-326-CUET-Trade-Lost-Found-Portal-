@@ -1,3 +1,6 @@
+// this is the become seller page for the CUET Trade & Lost-Found Portal
+// It allows users to choose how they want to list their items for sale
+// The page includes links to different categories like fashion, electronics, digital products, etc.
 import React from "react";
 import { Link } from "react-router-dom";
 import PostCard from "../components/PostCard";

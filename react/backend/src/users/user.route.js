@@ -61,7 +61,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// Sign In Endpoint
+// Sign In Endpoint here
 router.post("/signin", async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -85,7 +85,7 @@ router.post("/signin", async (req, res) => {
     const token = await generateToken(user._id);
 
     res.cookie("token", token, {
-      // httpOnly: true,
+      // httpOnly: true, 
       secure: true,
       sameSite: "None",
     });
@@ -266,7 +266,7 @@ router.get("/stats", verifyToken, async (req, res) => {
   }
 });
 
-// ✅ Get all bids placed by the logged-in user
+// Get all bids placed by the logged-in user
 router.get("/my-bids/:id", verifyToken, async (req, res) => {
   try {
     const userId = req.params.id;
